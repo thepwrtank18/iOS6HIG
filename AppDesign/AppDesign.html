@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iOS Human Interface Guidelines: App Design Strategies</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Guide">
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40006556">
+	<meta id="document-version" name="document-version" content="7.4.0">
+    <meta id="build" name="build" content="5ecdcf9336d429bd08185484ddb78eab">
+    <meta id="chapterId" name="chapterId" content="TP40006556-CH19">
+    <meta id="date" name="date" content="2013-05-01">
+    <meta id="description" name="description" content="Provides guidelines for designing the user interface of an iOS app.">
+    <meta id="book-title" name="book-title" content="iOS Human Interface Guidelines">
+    <meta id="book-name" name="book-name" content="MobileHIG">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="devcenter" name="devcenter" content="iOS Dev Center">
+    <meta id="devcenter-url" name="devcenter-url" content="http://developer.apple.com/devcenter/ios">
+    <meta id="reflib" name="reflib" content="iOS Developer Library">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Topic/User Experience}">
+    <meta name="pdf" contents="../MobileHIG.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="../MobileHIG.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 31823">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2013 Apple Inc. All Rights Reserved.">
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="App Design Strategies">
+    <meta id="resources-uri" name="resources-uri" content="../Resources/826">
+    <link id="book-index-page" rel="Start" title="iOS Human Interface Guidelines" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="../TranslateApp/TranslateApp.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="../Principles/Principles.html">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/../Resources/826/CSS/screen.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/../Resources/826/CSS/feedback.css">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40006556-CH19" title="App Design Strategies"></a>
+    <div id="adcHeader" class="hideOnPrint hideInXcode">
+        <div id='ssi_Header' class="hideInXcode phone">
+            <a id="ssi_LibraryTitle" href='https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/navigation/'>iOS Developer Library</a>
+            <a id="ssi_AppleDeveloperConnection" href='https://developer.apple.com/'>Developer</a>
+            <div id='ssi_SearchButton' role="button" title="Search">Search</div>
+        </div>
+        <form id='ssi_SearchMenu' method='get' action='https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/search/' accept-charset='utf-8'>
+            <label for='adcsearch'>Search iOS Developer Library</label>
+            <input type='search' id='ssi_SearchField' name='q' accesskey='s' results='5' />
+        </form>
+    </div>
+
+    <header id="header">
+        <div id="title" role="banner">
+            <h1>iOS Human Interface Guidelines</h1>
+            <span id="file_links">
+                <a id="PDF_link" role="button" tabindex='4' rel="alternate" title="Download PDF"><span id="pdf_icon"></span>PDF</a>
+                <a id="Companion_link" role="button" tabindex='3' title="Download Companion File"><span id="companion_icon"></span>Companion File</a>
+            </span>
+        </div>
+        <ul id="headerButtons" class="hideOnPrint" role="toolbar">
+            <li id="toc_button" style="display:none">
+                <button tabindex="5" id="table_of_contents" class="open" role="checkbox" aria-label="Show Table of Contents"><span class="disclosure"></span>Table of Contents</button>
+            </li>
+            <li id="jumpto_button" style="display:none" role="navigation"><select tabindex="6" id="jumpTo"><option value="top">Jump To&#133;</option></select></li>
+            <li id="downloadSample_button" style="display:none">
+                <a id="Sample_link"><button id="Sample_button">Download Sample Code</button></a>
+            </li>
+        </ul>
+    </header>
+    <nav id="tocContainer" tabindex="7">
+        <ul id="toc" role="tree"></ul>
+    </nav>
+
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../TranslateApp/TranslateApp.html'>Next</a><a class='previousLink' rel='prev' href='../Principles/Principles.html'>Previous</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40006556-CH19-SW1" title="App Design Strategies"></a><h1 id="pageTitle">App Design Strategies</h1><p>All great apps begin with a great idea, but that doesn’t mean that the path from idea to successful iOS app is an easy one. This chapter describes some strategies you can use to refine your idea, review your design options, and converge on an app that people will appreciate.</p><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW2" title="Create an App Definition Statement"></a><h2 class="jump">Create an App Definition Statement</h2><p></p><p>An app definition statement is a concise, concrete declaration of an app’s main purpose and its intended audience. </p><p>Create an app definition statement early in your development effort to help you turn an idea and a list of features into a coherent product that people want to own. Throughout development, use the definition statement to decide if potential features and behaviors make sense. Take the following steps to create a solid app definition statement.</p><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW6" title="1. List All the Features You Think Users Might Like"></a><h3 class="jump">1. List All the Features You Think Users Might Like</h3><p>Go ahead and brainstorm here. At this point, you’re trying to capture all the tasks related to your main product idea. Don’t worry if your list is long; you’ll narrow it down later.</p><p>For example, imagine that your initial idea is to develop an app that helps people shop for groceries. As you think about this activity, you come up with a list of related tasks (potential features) that users might be interested in, such as: </p><ul class="ul"><li class="li"><p>Creating lists</p></li><li class="li"><p>Getting recipes</p></li><li class="li"><p>Comparing prices</p></li><li class="li"><p>Locating stores</p></li><li class="li"><p>Annotating recipes</p></li><li class="li"><p>Getting and using coupons</p></li><li class="li"><p>Viewing cooking demos</p></li><li class="li"><p>Exploring different cuisines</p></li><li class="li"><p>Finding ingredient substitutions</p></li></ul></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW7" title="2. Determine Who Your Users Are"></a><h3 class="jump">2. Determine Who Your Users Are</h3><p>Apart from the likelihood that your users are mobile and that they expect beautiful graphics, simple interactions, and high performance, what distinguishes them? In the context of the app you’re planning, what is most important to your users? Using the grocery-shopping example, you might ask whether your users:</p><ul class="ul"><li class="li"><p>Usually cook at home or prefer ready-made meals</p></li><li class="li"><p>Are committed coupon-users or think that coupons aren’t worth the effort</p></li><li class="li"><p>Enjoy hunting for speciality ingredients or seldom venture beyond the basics</p></li><li class="li"><p>Follow recipes strictly or use recipes as inspiration</p></li><li class="li"><p>Buy small amounts frequently or buy in bulk infrequently</p></li><li class="li"><p>Want to keep several in-progress lists for different purposes or just want to remember a few things to buy on the way home</p></li><li class="li"><p>Insist on specific brands or make do with the most convenient alternatives</p></li><li class="li"><p>Tend to buy a similar set of items on each shopping trip or buy items listed in a recipe</p></li></ul><p></p><p>After musing on these questions, imagine that you decide on three characteristics that best describe your target audience: Love to experiment with recipes, are often in a hurry, and are thrifty (if it doesn’t take too much effort).</p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW8" title="3. Filter the Feature List Through the Audience Definition"></a><h3 class="jump">3. Filter the Feature List Through the Audience Definition</h3><p>If, after deciding on a few audience characteristics, you end up with just a few features, you’re on the right track: Great iOS apps have a laser focus on the task users want to accomplish.</p><p>For example, consider the large number of possible features for the grocery-shopping app you listed in Step 1. Even though these are all useful features, it’s not likely that every feature would be equally useful to every user. More importantly, it’s not likely that every feature would be equally appreciated by the audience you defined in Step 2.</p><p>When you examine your feature list in the context of your target audience, you conclude that your app should focus on three main features: Creating lists, getting and using coupons, and getting recipes.</p><p>Now you can craft your app definition statement, concretely summarizing what the app does and for whom. A good app definition statement for this grocery-shopping app might be:</p><p>“A shopping list creation tool for thrifty people who love to cook.“</p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW9" title="4. Don’t Stop There"></a><h3 class="jump">4. Don’t Stop There</h3><p>Use your app definition statement throughout the development process to determine the suitability of features, controls, and terminology. For example:</p><p>As you consider whether to add a new feature, ask yourself whether it is essential to the main purpose of your app and to your target audience. If it isn’t, set it aside; it might form the basis of a different app. For example, you’ve decided that your users are interested in adventurous cooking, so emphasizing boxed cake mixes and ready-made meals would probably not be appreciated.</p><p>As you consider the look and behavior of the UI, ask yourself whether your users appreciate a simple, streamlined style or a more overtly thematic style. Be guided by what people might expect to accomplish with your app, such as the ability to accomplish a serious task, to get a quick answer, to delve into comprehensive content, or to be entertained. For example, although your grocery list app needs to be easy to understand and quick to use, your audience is likely to appreciate a themed UI that includes beautiful pictures of ingredients and meals.</p><p>As you consider the terminology to use, strive to match your audience’s expertise with the subject. For example, even though your audience might not be made up of expert chefs, you’re fairly confident that they appreciate seeing the proper terms for ingredients and techniques.</p></section></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW3" title="Design the App for the Device"></a><h2 class="jump">Design the App for the Device</h2><p>You know what your app does and who its audience is; now you need to make sure that your app looks and feels like it was designed expressly for an iOS device. This is crucial because people have high expectations for the apps they choose to install on their devices. If your app feels like it was designed for a different device, or for the web, people are less likely to value it.</p><p></p><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW10" title="Embrace iOS UI Paradigms"></a><h3 class="jump">Embrace iOS UI Paradigms</h3><p>iOS users are accustomed to the appearance and behavior of the built-in apps, so they tend to expect similar experiences in the apps they download. You don’t want to mimic every detail of the built-in apps but it’s helpful to understand the design patterns they follow. Start by understanding the characteristics that distinguish iOS devices and the apps that run on them (you can read about these in <span class="content_text"><a href="../Characteristics/Characteristics.html#//apple_ref/doc/uid/TP40006556-CH7-SW1">“Platform Characteristics”</a></span>). Then, keep the following things in mind:</p><p><strong>Controls should look tappable.</strong> iOS controls, such as buttons, pickers, and sliders, have contours and gradients that invite touches.</p><p><strong>App structure should be clean and easy to navigate.</strong> iOS provides the <strong>navigation bar</strong> for drilling down through hierarchical content, and the <strong>tab bar</strong> for displaying different peer groups of content or functionality.</p><p><strong>User feedback should be subtle, but clear.</strong> iOS apps often use precise, fluid animations to show the results of user actions. iOS apps can also use the activity indicator and the progress view to show status, and the alert to give users warnings or other critical information. </p><p>You can learn about the usage guidelines that govern these elements in <span class="content_text"><a href="../UIElementGuidelines/UIElementGuidelines.html#//apple_ref/doc/uid/TP40006556-CH13-SW1">“iOS UI Element Usage Guidelines.”</a></span> As you begin designing the overall user experience of your app, be sure you understand the guidelines described in <span class="content_text"><a href="../UEBestPractices/UEBestPractices.html#//apple_ref/doc/uid/TP40006556-CH20-SW1">“User Experience Guidelines.”</a></span></p><p></p><p></p><p></p><p></p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW11" title="Ensure that Universal Apps Run Well on Both iPhone and iPad"></a><h3 class="jump">Ensure that Universal Apps Run Well on Both iPhone and iPad</h3><p>If you’re planning to develop an app that runs on iPhone and iPad, you need to adapt your design to each device. Here is some guidance to help you do this:</p><p><strong>Mold the UI of each app version to the device it runs on.</strong> Most individual UI elements are available on both devices, but overall the layout differs dramatically.</p><p><strong>Adapt art to the screen size.</strong> Users tend to expect more high-fidelity artwork in iPad apps than they do in iPhone apps. Merely scaling up an iPhone app to fill the iPad screen is not recommended.</p><p><strong>Preserve the primary functionality of your app, regardless of the device it runs on.</strong> Even though one version might offer a more in-depth or interactive presentation of the task than the other, it’s important to avoid making users feel that they’re choosing between two entirely different apps.</p><p><strong>Go beyond the default.</strong> Unmodified iPhone apps run in a compatibility mode on iPad by default. Although this mode allows people to use an iPhone app on iPad, it does not give them the device-specific experience they want.</p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW12" title="Reconsider Web-Based Designs"></a><h3 class="jump">Reconsider Web-Based Designs</h3><p>If you're coming from the web, you need to make sure that you give people an iOS app experience, not a web experience. Remember, people can visit your website on their iOS devices using Safari on iOS.</p><p>Here are some strategies that can help web developers create an iOS app:</p><p><strong>Focus your app.</strong> Websites often greet visitors with a large number of tasks and options from which they can choose, but this type of experience does not translate well to iOS apps. iOS users expect an app to do what it advertises, and they want to see useful content immediately.</p><p><strong>Make sure your app lets people do something.</strong> People might enjoy viewing marketing content in the websites they visit, but they expect to accomplish something in an app.</p><p><strong>Design for touch.</strong> Don’t try to replicate web UI design paradigms in your iOS app. Instead, get familiar with the UI elements and patterns of iOS and use them to showcase your content. Web elements you’ll need to re-examine include menus, interactions initiated by hovering, and links.</p><p><strong>Let people scroll.</strong> Most websites take care to display the most important information in the top half of the page where it is seen first (“above the fold”), because people sometimes leave a page when they don’t find what they’re looking for near the top. But on iOS devices, scrolling is an easy, expected part of the experience. If you reduce font size or squeeze controls to fit your content into the space of a single device screen, you’re likely to end up with unreadable content and an unusable layout.</p><p><strong>Relocate the homepage icon.</strong> Websites often display an icon that links to the homepage at the top of every webpage. iOS apps don’t include homepages, so this behavior is unnecessary. In addition, iOS apps allow people to tap the status bar to quickly scroll back to the top of a long list. If you center a tappable home icon at the top of the screen, it’s very difficult for users to tap the status bar instead. </p></section></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW4" title="Tailor Customization to the Task"></a><h2 class="jump">Tailor Customization to the Task</h2><p></p><p>The best iOS apps balance UI customization with clarity of purpose and ease of use. To achieve this balance in your app, be sure to consider customization early in the design process. Because concerns about branding, originality, and marketability often influence customization decisions, it can be challenging to stay focused on how customization impacts the user experience.</p><p>Using the iOS SDK, you can customize the UI of your app as much or as little as you choose. Because there are no practical limits to the amount of customization that you can do, you need to determine how customization might affect the task your app enables. As you consider the tasks in your app, think about how often users perform them and under what circumstances.</p><p>For example, imagine an app that enables phone calls. Now imagine that instead of a keypad, the app displays a beautiful, realistic rotary dial. The dial is meticulously rendered, so users both appreciate its quality and instantly know how to use it. The dial behaves realistically, so users delight in making the dialing gesture and hearing the distinctive sounds. But for users who often need to call numbers that are not in Contacts, initial appreciation of the experience soon gives way to frustration, because using a rotary dial is much less efficient than using a keypad. In an app that is designed to help people make phone calls, this beautiful custom UI is a hindrance.</p><figure class="figure"><img src="../Art/rotary_dial.jpg" alt="../Art/rotary_dial.jpg" width="307" height="596"></figure><p>On the other hand, consider the BubbleLevel sample app, which displays a realistic rendition of a carpenter’s level. People know how to use the physical tool so they instantly know how to use the app. The app could have displayed its information without the rendition of the bubble vial, but this would have made the app less intuitive and harder to use. In this case, the custom UI not only shows people how to use the app, it also makes the task easier to accomplish.</p><figure class="figure"><img src="../Art/bubble_level.jpg" alt="../Art/bubble_level.jpg" width="596" height="307"></figure><p></p><p>As you consider how customization might enhance or detract from the task your app enables, keep these guidelines in mind.</p><p><strong>Always have a reason for customization.</strong> Ideally, UI customization facilitates the task people want to perform and enhances their experience. As much as possible, you need to let your app’s task drive your customization decisions. For example:</p><ul class="ul"><li class="li"><p>If your app enables a productive task that involves the manipulation of a lot of detailed data, people are likely to appreciate an understated, mostly standard UI and streamlined navigation.</p></li><li class="li"><p>If your app helps people view content, they generally don’t appreciate a UI that competes with it.</p></li><li class="li"><p>If your app is a game or provides an immersive, story-driven experience, people expect to enter a unique world filled with rich, beautiful graphics and innovative interactions.</p></li></ul><p></p><p></p><p></p><p><strong>As much as possible, avoid increasing the user’s cognitive burden.</strong> Users are familiar with the appearance and behavior of the standard UI elements, so they don’t have to stop and think about how to use them. When faced with elements that do not look or behave at all like standard ones, users lose the advantage of their prior experience. Unless your unique elements make performing the task easier, users might dislike being forced to learn new procedures that don’t transfer to any other apps.</p><p><strong>Be internally consistent.</strong> The more custom your UI is, the more important it is for the appearance and behavior of your custom elements to be consistent within your app. If users take the time to learn how to use the unfamiliar controls you create, they expect to be able to rely on that knowledge throughout your app.</p><p><strong>Always defer to the content.</strong> Because the standard elements are so familiar, they don’t compete with the content for people’s attention. As you customize your UI, take care to ensure that it does not overshadow the content people care about. For example, if your app allows people to watch videos, you might choose to design custom playback controls. But whether you use custom or standard playback controls is less important than whether the controls fade out after the user begins watching the video and reappear with a tap.</p><p><strong>Think twice before you redesign a standard control.</strong> If you plan on doing more than customizing a standard control, make sure your redesigned control provides as much information as the standard one. For example, if you create a button that doesn’t have the rounded, dimensional appearance people associate with buttons, people might not realize that it’s tappable. Or, if you create a switch control that does not indicate the presence of the opposite value, people might not realize that it’s a two-state control.</p><p></p><p><strong>Be sure to thoroughly user-test custom UI elements.</strong> During testing, closely observe users to see if they can predict what your elements do and if they can interact with them easily. If, for example, you create a control that has a hit target smaller than 44 x 44 points, people will have trouble activating it. Or, if you create a view that responds differently to a tap than it does to a swipe, be sure the functionality the view provides is worth the extra care people have to take when interacting with it.</p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH19-SW5" title="Prototype and Iterate"></a><h2 class="jump">Prototype and Iterate</h2><p></p><p></p><p>Before you invest significant engineering resources into the implementation of your design, it’s a really good idea to create prototypes for user testing. Even if you can get only a few colleagues to test the prototypes, you’ll benefit from their fresh perspectives on your app’s functionality and user experience.</p><p>In the very early stages of your design you can use paper prototypes or wireframes to lay out the main views and controls, and to map the flow among screens. Although you can get some useful feedback from testing wireframes, their sparseness can mislead testers. This is because it’s difficult for people to imagine how the experience of an app will change when wireframes are filled in with real content.</p><p>You’ll get more valuable feedback if you can put together a fleshed-out prototype that runs on a device. When people can interact with your prototype on a device, they’re more likely to uncover places where your app doesn’t function as they expect, or where the user experience is too complex.</p><p>The easiest way to create a credible prototype is to use a storyboard-based Xcode template to build a basic app, and populate it with some appropriate placeholder content. (A <span class="pediaLink" data-header="Storyboard" data-contents="A storyboard is a visual representation of the user interface of an iOS application, showing screens of content and the connections between those screens. "><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/General/Conceptual/Devpedia-CocoaApp/Storyboard.html#//apple_ref/doc/uid/TP40009071-CH99" target="_self">storyboard</a></span> file captures the entire UI of your app, including the transitions among different screens.) Then, install the prototype on a device so that your testers can have as realistic an experience as possible. </p><p>You don’t need to supply a large amount of content or enable every control in your prototype app, but you do need to provide enough context to suggest a realistic experience. Aim for a balance between the typical user experience and the more unusual edge cases. For example, if it’s likely that your app will handle long lists of items, you should avoid creating a prototype that displays only one or two list items. And for testing user interactions, as long as testers can tap an area of the screen to advance to the next logical view or to perform the main task, they’ll be able to provide constructive feedback.</p><p>When you base your prototype on an Xcode app template, you get lots of functionality for free and it’s relatively easy to make design adjustments in response to feedback. With a short turnaround time, you should be able to test several iterations of your prototype before you solidify your design and commit resources to its implementation. To get started learning about Xcode, see <em><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/ToolsLanguages/Conceptual/Xcode_User_Guide/000-About_Xcode/about.html#//apple_ref/doc/uid/TP40010215" target="_self">Xcode User Guide</a></em>.</p></section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../TranslateApp/TranslateApp.html'>Next</a><a class='previousLink' rel='prev' href='../Principles/Principles.html'>Previous</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> Copyright &#x00a9; 2013 Apple Inc. All Rights Reserved. <a href="http://www.apple.com/legal/internet-services/terms/site.html" target="_blank">Terms of Use</a>   |  <a href="http://www.apple.com/privacy/" target="_blank">Privacy Policy</a>  |  Updated: 2013-05-01</p></div></div>
+
+        <div id="pediaWindow">
+            <div id="pediaHeader"></div>
+            <div id="pediaBody"></div>
+        </div>
+    </article>
+
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="leave_feedback" class="button" role="button" tabindex="0">Provide Feedback</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <input id="email" type="email" name="email" placeholder="Email (optional)" size="48">
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+    
+    <script charset="utf-8" src="../Resources/826/JavaScript/lib/prototype.js"></script>
+    <script charset="utf-8" src="../book_data.js"></script>
+    <script src="../Resources/826/JavaScript/library.js"></script>
+    <script src="../Resources/826/JavaScript/feedback.js"></script>
+</body>
+<script type="text/javascript">
+if(typeof PageTracker !== 'undefined') {
+  if(window.addEventListener) {
+    window.addEventListener("load", function(){PageTracker.logPageLoad()},false);
+  } else if(window.attachEvent) {
+    window.attachEvent("onload",function(){PageTracker.logPageLoad()});
+  }
+}
+</script>
+</html>

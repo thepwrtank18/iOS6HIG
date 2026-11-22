@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iOS Human Interface Guidelines: Platform Characteristics</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Guide">
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40006556">
+	<meta id="document-version" name="document-version" content="7.4.0">
+    <meta id="build" name="build" content="5ecdcf9336d429bd08185484ddb78eab">
+    <meta id="chapterId" name="chapterId" content="TP40006556-CH7">
+    <meta id="date" name="date" content="2013-05-01">
+    <meta id="description" name="description" content="Provides guidelines for designing the user interface of an iOS app.">
+    <meta id="book-title" name="book-title" content="iOS Human Interface Guidelines">
+    <meta id="book-name" name="book-name" content="MobileHIG">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="devcenter" name="devcenter" content="iOS Dev Center">
+    <meta id="devcenter-url" name="devcenter-url" content="http://developer.apple.com/devcenter/ios">
+    <meta id="reflib" name="reflib" content="iOS Developer Library">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Topic/User Experience}">
+    <meta name="pdf" contents="../MobileHIG.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="../MobileHIG.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 31823">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2013 Apple Inc. All Rights Reserved.">
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Platform Characteristics">
+    <meta id="resources-uri" name="resources-uri" content="../Resources/826">
+    <link id="book-index-page" rel="Start" title="iOS Human Interface Guidelines" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="../Principles/Principles.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="../Introduction/Introduction.html">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/../Resources/826/CSS/screen.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/../Resources/826/CSS/feedback.css">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40006556-CH1" title="Introduction"></a>
+    <div id="adcHeader" class="hideOnPrint hideInXcode">
+        <div id='ssi_Header' class="hideInXcode phone">
+            <a id="ssi_LibraryTitle" href='https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/navigation/'>iOS Developer Library</a>
+            <a id="ssi_AppleDeveloperConnection" href='https://developer.apple.com/'>Developer</a>
+            <div id='ssi_SearchButton' role="button" title="Search">Search</div>
+        </div>
+        <form id='ssi_SearchMenu' method='get' action='https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/search/' accept-charset='utf-8'>
+            <label for='adcsearch'>Search iOS Developer Library</label>
+            <input type='search' id='ssi_SearchField' name='q' accesskey='s' results='5' />
+        </form>
+    </div>
+
+    <header id="header">
+        <div id="title" role="banner">
+            <h1>iOS Human Interface Guidelines</h1>
+            <span id="file_links">
+                <a id="PDF_link" role="button" tabindex='4' rel="alternate" title="Download PDF"><span id="pdf_icon"></span>PDF</a>
+                <a id="Companion_link" role="button" tabindex='3' title="Download Companion File"><span id="companion_icon"></span>Companion File</a>
+            </span>
+        </div>
+        <ul id="headerButtons" class="hideOnPrint" role="toolbar">
+            <li id="toc_button" style="display:none">
+                <button tabindex="5" id="table_of_contents" class="open" role="checkbox" aria-label="Show Table of Contents"><span class="disclosure"></span>Table of Contents</button>
+            </li>
+            <li id="jumpto_button" style="display:none" role="navigation"><select tabindex="6" id="jumpTo"><option value="top">Jump To&#133;</option></select></li>
+            <li id="downloadSample_button" style="display:none">
+                <a id="Sample_link"><button id="Sample_button">Download Sample Code</button></a>
+            </li>
+        </ul>
+    </header>
+    <nav id="tocContainer" tabindex="7">
+        <ul id="toc" role="tree"></ul>
+    </nav>
+
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../Principles/Principles.html'>Next</a><a class='previousLink' rel='prev' href='../Introduction/Introduction.html'>Previous</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40006556-CH7-SW1" title="Platform Characteristics"></a><h1 id="pageTitle">Platform Characteristics</h1><p>iOS devices share several unique characteristics that influence the user experience of all apps that run on them. The most successful apps embrace these characteristics and provide a user experience that integrates with the device they’re running on.</p><p></p><p></p><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW6" title="The Display Is Paramount, Regardless of Its Size"></a><h2 class="jump">The Display Is Paramount, Regardless of Its Size</h2><p></p><p>The display of an iOS device is at the heart of the user’s experience. Not only do people view beautiful text, graphics, and media on the display, they also physically interact with the Multi-Touch screen to drive their experience (even when they can’t see the screen).</p><p>Different iOS devices can have displays of different dimensions and resolutions, but in all devices the display affects the user experience in the same ways:</p><ul class="ul"><li class="li"><p>44 x 44 points is the comfortable minimum size of a tappable UI element.</p></li><li class="li"><p>People are very aware of the quality of app artwork.</p></li><li class="li"><p>The display encourages people to forget about the device and to focus on their content or task.</p></li></ul><p></p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40006556-CH7-SW12" title="Note"></a><p><strong>Note:</strong>&nbsp;<strong>Pixel</strong> is the appropriate unit of measurement to use when discussing the size of a device screen or the size of an icon you create in an image-editing app. <strong>Point</strong> is the appropriate unit of measurement to use when discussing the size of an area that is drawn onscreen.</p><p>On a standard-resolution device screen, one point equals one pixel, but other resolutions might dictate a different relationship. On a Retina display, for example, one point equals two pixels.</p><p>See <span class="content_text"><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/WindowsandViews/WindowsandViews.html#//apple_ref/doc/uid/TP40009503-CH2-SW15" target="_self">“Points Versus Pixels”</a></span> in <em><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503">View Programming Guide for iOS</a></em> for a complete discussion of this concept.</p><p></p></aside></div><p></p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW3" title="Device Orientation Can Change"></a><h2 class="jump">Device Orientation Can Change</h2><p>People can rotate iOS devices at any time and for a variety of reasons. For example, sometimes the task people are performing feels more natural in portrait, and sometimes people feel that they can see more in landscape. Whatever their reason for rotating the device, people expect the app to maintain its focus on the primary functionality.</p><p></p><p></p><p></p><p></p><p>People often launch apps from the Home screen, so they tend to expect all apps to start in the same orientation. Because of the different ways iPhone and iPad display the Home screen, this expectation affects apps in different ways:</p><p></p><ul class="ul"><li class="li"><p>On iPhone and iPod touch, the Home screen is displayed in portrait orientation only, with the Home button at the bottom. This leads users to expect iPhone apps to launch in this orientation by default.</p></li><li class="li"><p>On iPad, the Home screen is displayed in all orientations, so users tend to expect iPad apps to launch in the device orientation they’re currently using.</p></li></ul></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW4" title="Apps Respond to Gestures, Not Clicks"></a><h2 class="jump">Apps Respond to Gestures, Not Clicks</h2><p>People make specific finger movements, called gestures, to operate the unique Multi-Touch interface of iOS devices. For example, people tap a button to activate it, flick or drag to scroll a long list, or pinch open to zoom in on an image.</p><p>The Multi-Touch interface gives people a sense of immediate connection with their devices and enhances their sense of direct manipulation of onscreen objects. </p><p>People are comfortable with the standard gestures because the built-in apps use them consistently. Their experience using the built-in apps gives people a familiar set of gestures that they expect to be able to use successfully in most other apps.</p><a name="//apple_ref/doc/uid/TP40006556-CH7-SW5" title="Table 1-1Gestures users make to interact with iOS devices"></a><div class="tableholder"><table class="graybox" border = "0" cellspacing="0" cellpadding="5"><caption class="tablecaption"><strong class="caption_number">Table 1-1</strong>&nbsp;&nbsp;Gestures users make to interact with iOS devices</caption><tr><th scope="col" class="TableHeading_TableRow_TableCell"><p>Gesture</p></th><th scope="col" class="TableHeading_TableRow_TableCell"><p>Action</p></th></tr><tr><td  scope="row"><p>Tap</p></td><td ><p>To press or select a control or item (analogous to a single mouse click).</p></td></tr><tr><td  scope="row"><p>Drag</p></td><td ><p>To scroll or pan (that is, move side to side).</p><p>To drag an element.</p></td></tr><tr><td  scope="row"><p>Flick</p></td><td ><p>To scroll or pan quickly.</p></td></tr><tr><td  scope="row"><p>Swipe</p></td><td ><p>With one finger, to reveal the Delete button in a table-view row, the hidden view in a split view (iPad only), or the Notification Center (from the top edge of the screen).</p><p>With four fingers, to switch between apps on iPad.</p></td></tr><tr><td  scope="row"><p>Double tap</p></td><td ><p>To zoom in and center a block of content or an image.</p><p>To zoom out (if already zoomed in).</p></td></tr><tr><td  scope="row"><p>Pinch</p></td><td ><p>Pinch open to zoom in.</p><p>Pinch close to zoom out.</p></td></tr><tr><td  scope="row"><p>Touch and hold</p></td><td ><p>In editable or selectable text, to display a magnified view for cursor positioning.</p></td></tr><tr><td  scope="row"><p>Shake</p></td><td ><p>To initiate an undo or redo action.</p></td></tr></table></div><p>In addition to these gestures, people can move the device itself to perform certain tasks. Examples of these tasks are to activate Siri (on iPhone 4S) or to calibrate the compass. People expect all these gestures to work the same, regardless of the app they’re currently running.</p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW9" title="People Interact with One App at a Time"></a><h2 class="jump">People Interact with One App at a Time</h2><p>Only one app is visible in the foreground at a time. When people switch from one app to another, the previous app transitions to the background and its user interface goes away. This feature, called <strong>multitasking</strong>, allows apps to remain in the background until users relaunch them or until they are terminated.</p><p>Most apps enter a suspended state when they transition to the background. Suspended apps are displayed in the multitasking UI, which provides a convenient way for people to switch to recently used apps. The multitasking UI appears at the bottom of the screen, below the UI of the currently running app or the Home screen (shown here below the iPhone Settings app).</p><figure class="figure"><img src="../Art/multitasking_settings.png" alt="image: ../Art/multitasking_settings.png" width="320" height="480"></figure><p>When people return to a suspended app, it can instantly resume running from the point where it went to the background, without having to reload its UI.</p><p>Some apps might need to continue running in the background while users run another app in the foreground. For example, users might want to continue hearing the song that’s playing in one app while they’re using a different app to check their to-do list or handle email.</p><p>To learn how to handle multitasking correctly and gracefully, see <span class="content_text"><a href="../TechnologyUsage/TechnologyUsage.html#//apple_ref/doc/uid/TP40006556-CH18-SW2">“Multitasking.”</a></span></p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40006556-CH7-SW10" title="Note"></a><p><strong>Note:</strong>&nbsp;Apps running in iOS 3.2 and earlier don’t enter the background and some older devices don’t support multitasking or background execution at all, even when running iOS 4 or later. In these cases, apps are terminated when they leave the foreground.</p><p></p></aside></div></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW7" title="Preferences Are Available in Settings"></a><h2 class="jump">Preferences Are Available in Settings</h2><p>People set certain preferences for an iOS app in the built-in Settings app. They must switch away from the current app when they want to access those preferences in Settings.</p><p>Preferences in the Settings app are of the “set once and rarely change” type. Although some of the built-in apps provide preferences of this type, most apps do not need them, so they don’t have preferences in the Settings app.</p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW11" title="Onscreen User Help Is Minimal"></a><h2 class="jump">Onscreen User Help Is Minimal</h2><p>Mobile users have neither the time nor the desire to read through a lot of help content before they can benefit from an app. What’s more, help content takes up valuable space to store and display.</p><p>iOS devices and the built-in apps are intuitive and easy to use, so people don’t need onscreen help content to tell them how to use the device or the apps. This experience leads people to expect all iOS apps to be similarly easy to use.</p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW8" title="Most iOS Apps Have a Single Window"></a><h2 class="jump">Most iOS Apps Have a Single Window</h2><p>An iOS app has a single window, unless it supports an external display. An app’s <span class="pediaLink" data-header="Window object" data-contents="A window object presents graphical content in a rectangular area of the screen and plays a role in the distribution of events. "><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/General/Conceptual/Devpedia-CocoaApp/Window.html#//apple_ref/doc/uid/TP40009071-CH6" target="_self">window</a></span> fills the device’s main screen and provides an empty surface that hosts one or more <span class="pediaLink" data-header="View object" data-contents="A view is an object that draws itself within a rectangular area of a window and that can respond to user actions such as finger taps or mouse clicks. "><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/General/Conceptual/Devpedia-CocoaApp/ViewObject.html#//apple_ref/doc/uid/TP40009071-CH5" target="_self">views</a></span> in which you present your content. It’s important to realize that a window in an iOS app is very different from a window in a computer app. For example, an iOS window has no visible components (such as a title bar or a close button) and it can’t be moved to a new location on the device display. </p><p>It’s also important to realize that most users are unaware of the windows and views in the iOS apps that they use. For the most part, users experience an iOS app as a collection of screens through which they navigate. From this perspective, a <em>screen</em> generally corresponds to a distinct visual state or mode in an app. In the Contacts app on iPhone, for example, users think of their contact list—regardless of its length—as one screen and an individual contact’s details as a different screen.</p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40006556-CH7-SW15" title="Note"></a><p><strong>Note:</strong>&nbsp;Because this document focuses on the UI and user experience of iOS apps, it frequently uses “screen” as it’s understood by most users. Unless otherwise stated, this document does not use “screen” to mean a <code><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIScreen_Class/Reference/UIScreen.html#//apple_ref/occ/cl/UIScreen" target="_self">UIScreen</a></code> object (which is an object you can use to access an external display screen).</p><p></p></aside></div><p></p><p></p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW2" title="Two Types of Software Run in iOS"></a><h2 class="jump">Two Types of Software Run in iOS</h2><p>There are two types of software that you can develop for iOS devices:</p><ul class="ul"><li class="li"><p>iOS apps</p></li><li class="li"><p>Web content</p></li></ul><p></p><p>An <strong>iOS app</strong> is an app you develop using the iOS SDK to run natively on iOS devices. iOS apps resemble the built-in apps on iOS devices in that they reside on the device itself and take advantage of features of the iOS environment. People install iOS apps on their devices and use them just as they use built-in apps, such as Photos, Calendar, and Mail.</p><p><strong>Web content</strong> is hosted by a website that people visit using their iOS devices. There are three types of web content:</p><p><strong>Web apps.</strong> Webpages that provide a focused solution to a task and conform to certain display guidelines are known as web apps because they behave similarly to iOS apps. A web app often hides the UI of Safari on iOS so that it looks more like a native app. Using the web clip feature, a web app can also supply an icon for people to put on the Home screen. This allows people to open web apps in the same way that they open iOS apps.</p><p><strong>Optimized webpages.</strong> Webpages that are optimized for Safari on iOS display and operate as designed (with the exception of any elements that rely on unsupported technologies, such as plug-ins, Flash, and Java). In addition, an optimized webpage correctly scales content for the device screen and is often designed to detect when it is being viewed on iOS devices, so that it can adjust the content it provides accordingly.</p><p><strong>Compatible webpages.</strong> Webpages that are compatible with Safari on iOS display and operate as designed (with the exception of any elements that rely on unsupported technologies, such as plug-ins, Flash, and Java). A compatible webpage does not tend to take extra steps to optimize the viewing experience on iOS devices, but the device usually displays the page successfully.</p><p>An iOS app might combine native UI elements with access to web content within a web content–viewing area (typically by using a <code><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html#//apple_ref/occ/cl/UIWebView" target="_self">UIWebView</a></code>). Such an app can look and behave like a native iOS app, without drawing attention to the fact that it depends on web sources.</p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH7-SW13" title="Safari on iOS Provides the Web Interface"></a><h2 class="jump">Safari on iOS Provides the Web Interface</h2><p>Safari on iOS provides the interface for browsing web content on iOS devices. Although Safari on iOS is similar in many ways to Safari on the computer desktop, it is not the same.</p><p>For the most part, users can’t change the size of the <strong>viewport</strong> (the area that displays content). On the desktop, users resize the viewport when they resize the browser window. On iOS devices, the viewport doesn’t resize unless the device orientation changes. iOS users can change the scale of the viewport by zooming in and out, and they can pan the webpage. On iPad, users are much less likely to zoom web content than they are on iPhone (shown below).</p><figure class="figure"><img src="../Art/safari_not_same.png" alt="image: ../Art/safari_not_same.png" width="320" height="460"></figure><p><strong>Safari on iOS supports cookies.</strong> Use of cookies can streamline user interaction with web content by saving the user’s context, preferences, and previously entered data.</p><p><strong>Safari on iOS does not support Flash, Java (including Java applets), or third-party plug-ins within web content.</strong> Instead, Safari on iOS supports the HTML5 <code>&lt;audio></code> and <code>&lt;video></code> tags to provide audio and video streaming, and JavaScript and CSS3 transforms, transitions, and animations to display animated content.</p><p><strong>Safari on iOS interprets most gestures as targeting the way the device displays content, not the content itself.</strong> The tap—which is analogous to a single mouse click—can cause Safari on iOS to send the <code>onclick</code> event to a webpage. There are no analogs for other mouse-based gestures, such as hover.</p><p><strong>Safari on iOS allows web apps to run in full-screen mode.</strong> Web apps that launch from a web clip  icon on the user’s Home screen can hide the UI for Safari on iOS, so that they look more like native apps.</p></section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../Principles/Principles.html'>Next</a><a class='previousLink' rel='prev' href='../Introduction/Introduction.html'>Previous</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2013 Apple Inc. All Rights Reserved. &#40;Last updated: 2013-05-01&#041;</p></div></div>
+
+                <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> Copyright &#x00a9; 2013 Apple Inc. All Rights Reserved. <a href="http://www.apple.com/legal/internet-services/terms/site.html" target="_blank">Terms of Use</a>   |  <a href="http://www.apple.com/privacy/" target="_blank">Privacy Policy</a>  |  Updated: 2013-05-01</p></div></div>
+
+        <div id="pediaWindow">
+            <div id="pediaHeader"></div>
+            <div id="pediaBody"></div>
+        </div>
+    </article>
+
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="leave_feedback" class="button" role="button" tabindex="0">Provide Feedback</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <input id="email" type="email" name="email" placeholder="Email (optional)" size="48">
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+    
+    <script charset="utf-8" src="../Resources/826/JavaScript/lib/prototype.js"></script>
+    <script charset="utf-8" src="../book_data.js"></script>
+    <script src="../Resources/826/JavaScript/library.js"></script>
+    <script src="../Resources/826/JavaScript/feedback.js"></script>
+</body>
+<script type="text/javascript">
+if(typeof PageTracker !== 'undefined') {
+  if(window.addEventListener) {
+    window.addEventListener("load", function(){PageTracker.logPageLoad()},false);
+  } else if(window.attachEvent) {
+    window.attachEvent("onload",function(){PageTracker.logPageLoad()});
+  }
+}
+</script>
+</html>

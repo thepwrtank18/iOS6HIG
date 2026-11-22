@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>iOS Human Interface Guidelines: Transition Case Studies</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta charset="utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Guide">
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40006556">
+	<meta id="document-version" name="document-version" content="7.4.0">
+    <meta id="build" name="build" content="5ecdcf9336d429bd08185484ddb78eab">
+    <meta id="chapterId" name="chapterId" content="TP40006556-CH10">
+    <meta id="date" name="date" content="2013-05-01">
+    <meta id="description" name="description" content="Provides guidelines for designing the user interface of an iOS app.">
+    <meta id="book-title" name="book-title" content="iOS Human Interface Guidelines">
+    <meta id="book-name" name="book-name" content="MobileHIG">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="devcenter" name="devcenter" content="iOS Dev Center">
+    <meta id="devcenter-url" name="devcenter-url" content="http://developer.apple.com/devcenter/ios">
+    <meta id="reflib" name="reflib" content="iOS Developer Library">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Guide}, {Topic/User Experience}">
+    <meta name="pdf" contents="../MobileHIG.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="../MobileHIG.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 31823">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2013 Apple Inc. All Rights Reserved.">
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="Transition Case Studies">
+    <meta id="resources-uri" name="resources-uri" content="../Resources/826">
+    <link id="book-index-page" rel="Start" title="iOS Human Interface Guidelines" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="../UEBestPractices/UEBestPractices.html">
+    <link id="previous-page" rel="Prev" type="text/html" href="../AppDesign/AppDesign.html">
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/../Resources/826/CSS/screen.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/../Resources/826/CSS/feedback.css">
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40006556-CH1" title="Introduction"></a>
+    <div id="adcHeader" class="hideOnPrint hideInXcode">
+        <div id='ssi_Header' class="hideInXcode phone">
+            <a id="ssi_LibraryTitle" href='https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/navigation/'>iOS Developer Library</a>
+            <a id="ssi_AppleDeveloperConnection" href='https://developer.apple.com/'>Developer</a>
+            <div id='ssi_SearchButton' role="button" title="Search">Search</div>
+        </div>
+        <form id='ssi_SearchMenu' method='get' action='https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/search/' accept-charset='utf-8'>
+            <label for='adcsearch'>Search iOS Developer Library</label>
+            <input type='search' id='ssi_SearchField' name='q' accesskey='s' results='5' />
+        </form>
+    </div>
+
+    <header id="header">
+        <div id="title" role="banner">
+            <h1>iOS Human Interface Guidelines</h1>
+            <span id="file_links">
+                <a id="PDF_link" role="button" tabindex='4' rel="alternate" title="Download PDF"><span id="pdf_icon"></span>PDF</a>
+                <a id="Companion_link" role="button" tabindex='3' title="Download Companion File"><span id="companion_icon"></span>Companion File</a>
+            </span>
+        </div>
+        <ul id="headerButtons" class="hideOnPrint" role="toolbar">
+            <li id="toc_button" style="display:none">
+                <button tabindex="5" id="table_of_contents" class="open" role="checkbox" aria-label="Show Table of Contents"><span class="disclosure"></span>Table of Contents</button>
+            </li>
+            <li id="jumpto_button" style="display:none" role="navigation"><select tabindex="6" id="jumpTo"><option value="top">Jump To&#133;</option></select></li>
+            <li id="downloadSample_button" style="display:none">
+                <a id="Sample_link"><button id="Sample_button">Download Sample Code</button></a>
+            </li>
+        </ul>
+    </header>
+    <nav id="tocContainer" tabindex="7">
+        <ul id="toc" role="tree"></ul>
+    </nav>
+
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../UEBestPractices/UEBestPractices.html'>Next</a><a class='previousLink' rel='prev' href='../AppDesign/AppDesign.html'>Previous</a>
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40006556-CH10-SW1" title="Transition Case Studies"></a><h1 id="pageTitle">Transition Case Studies</h1><p>In addition to creating new apps, you might also want to bring an existing app or piece of software to a new platform or device. In some cases, redesigning an app or website for a new platform or device can be more challenging than starting from scratch. In other cases, you only need to take a few steps to take advantage of the new environment. Whether your transition project is large or small, a good way to prepare for it is to study examples of other products that have made the same transition.</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW2" title="Transitioning Between the Desktop and an iOS Device"></a><h2 class="jump">Transitioning Between the Desktop and an iOS Device</h2><p></p><p>As you embark on bringing your software from the desktop to the iOS platform, stay focused on the ways in which people use iOS devices:</p><ul class="ul"><li class="li"><p>People often use iOS devices while they’re on the go, and in environments filled with distractions. Part of your job is to create a responsive, compelling experience that pulls people in, gets them quickly to the content they care about, and maintains focus on that content.</p></li><li class="li"><p>Following what’s known as the 80-20 rule, the largest percentage of users—typically, at least 80 percent—use a limited number of features in an app, while only a small percentage—seldom more than 20 percent—use all the features. Most iOS apps don’t need to provide all the features that only power users need.</p></li></ul><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW3" title="From Mail on the Desktop to Mail on iPhone"></a><h3 class="jump">From Mail on the Desktop to Mail on iPhone</h3><p></p><p></p><p></p><p></p><p>Mail is one of the most highly visible, well-used, and appreciated apps in OS X. It is also a very powerful program that allows users to create, receive, prioritize, and store email, track action items and events, and create notes and invitations. Mail on the desktop offers this powerful functionality in a couple of windows.</p><figure class="figure"><a name="//apple_ref/doc/uid/TP40006556-CH10-SW5"></a><img src="../Art/ds_mailondesktop.jpg" alt="image: ../Art/ds_mailondesktop.jpg" width="533" height="418"></figure><p>Mail on iPhone focuses on the core functionality of Mail on the desktop, helping people to receive, create, send, and organize their messages. Mail on iPhone delivers this condensed functionality in a UI tailored for the mobile experience that includes:</p><ul class="ul"><li class="li"><p>A streamlined appearance that puts people’s content front and center</p></li><li class="li"><p>Different views designed to facilitate different tasks</p></li><li class="li"><p>An intuitive information structure that scales effortlessly</p></li><li class="li"><p>Powerful editing and organizing tools that are available when they’re needed</p></li><li class="li"><p>Subtle but expressive animation that communicates actions and provides feedback</p></li></ul><p>It’s important to realize that Mail on iPhone isn’t a better app than Mail on the desktop; rather, it’s Mail, redesigned for mobile users. By concentrating on a subset of desktop features and presenting them in an attractively lean UI, Mail on iPhone gives people the core of the Mail experience while they’re mobile.</p><p></p><p>To adapt the Mail experience to the mobile context, Mail on iPhone innovates the UI in several key ways.</p><p><strong>Distinct, highly focused screens.</strong> Each screen displays one aspect of the Mail experience: account list, mailbox list, message list, message view, and composition view. Within a screen, people scroll to see the entire contents.</p><figure class="figure"><a name="//apple_ref/doc/uid/TP40006556-CH10-SW6"></a><img src="../Art/ds_mailscreens.png" class="wide-image" alt="image: ../Art/ds_mailscreens.png" width="874" height="386"><img src="../Art/ds_mailscreens.png" class="ipad-scaled-image" alt="image: ../Art/ds_mailscreens.png" width="670" height="295"></figure><p><strong>Easy, predictable navigation.</strong> Making one tap per screen, people drill down from the general (the list of accounts) to the specific (a message). Each screen displays a title that shows people where they are, and a back button that makes it easy for them to retrace their steps.</p><p><strong>Simple, tappable controls, available when needed.</strong> Because composing a message and checking for new email are primary actions people might want to take in any context, Mail on iPhone makes them accessible in multiple screens. When people are viewing a message, functions such as reply, move, and trash are available because they act upon a message.</p><figure class="figure"><img src="../Art/ui_taskstyleexample.png" alt="image: ../Art/ui_taskstyleexample.png" width="320" height="44"></figure><p><strong>Different types of feedback for different tasks.</strong> When people delete a message, it animates into the trash icon. When people send a message, they can see its progress; when the send finishes, they can hear a distinctive sound. By looking at the subtle text in the message list toolbar, people can see at a glance when their mailbox was last updated.</p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW4" title="From Keynote on the Desktop to Keynote on iPad"></a><h3 class="jump">From Keynote on the Desktop to Keynote on iPad</h3><p>Keynote on the desktop is a powerful, flexible app for creating world-class slide presentations. People love how Keynote combines ease of use with fine-grained control over myriad precise details, such as animations and text attributes.</p><figure class="figure"><img src="../Art/keynote_desktop.jpg" class="wide-image" alt="image: ../Art/keynote_desktop.jpg" width="688" height="476"><img src="../Art/keynote_desktop.jpg" class="ipad-scaled-image" alt="image: ../Art/keynote_desktop.jpg" width="670" height="463"></figure><p>Keynote on iPad captures the essence of Keynote on the desktop, and makes it feel at home on iPad by creating a user experience that:</p><ul class="ul"><li class="li"><p>Focuses on the user’s content</p></li><li class="li"><p>Reduces complexity without diluting capability</p></li><li class="li"><p>Provides shortcuts that empower and delight</p></li><li class="li"><p>Adapts familiar hallmarks of the desktop experience</p></li><li class="li"><p>Provides feedback and communication via eloquent animation</p></li></ul><p>Keynote users instantly understand how to use the app on iPad because it delivers expected functionality using native iPad paradigms. New users easily learn how to use Keynote on iPad because they can directly manipulate their content in simple, natural ways.</p><p>The transformation of Keynote from the desktop to iPad is based on myriad modifications and redesigns that range from subtle to profound. These are some of the most visible adaptations:</p><p><strong>A streamlined toolbar.</strong> Only seven items are in the toolbar, but they give users consistent access to all the functions and tools they need to create their content.</p><figure class="figure"><img src="../Art/keynote_toolbar.jpg" alt="image: ../Art/keynote_toolbar.jpg" width="614" height="29"></figure><p><strong>A simplified, prioritized inspector that responds to the user’s focus.</strong> The Keynote on iPad inspector automatically contains the tools and attributes people need to modify the selected object. Often, people can make all the modifications they need in the first inspector view. If they need to modify less frequently changed attributes, they can drill down to other inspector views.</p><figure class="figure"><img src="../Art/keynote_inspector.jpg" alt="image: ../Art/keynote_inspector.jpg" width="362" height="341"></figure><p><strong>Lots of prebuilt style collections.</strong> People can easily change the look and feel of objects such as charts and tables by taking advantage of the prebuilt styles. In addition to color scheme, each collection includes prestyled attributes, such as table headings and axis-division marks, that are designed to coordinate with the overall theme.</p><figure class="figure"><img src="../Art/keynote_presets.jpg" alt="image: ../Art/keynote_presets.jpg" width="366" height="403"></figure><p><strong>Direct manipulation of content, enriched with meaningful animation.</strong> In Keynote on iPad, a user drags a slide to a new position, twists an object to rotate it, and taps an image to select it. The impression of direct manipulation is enhanced by the responsive animations Keynote on iPad performs. For example, a slide pulses gently as users move it and, when they place it in a new location, the surrounding slides ripple outward to make room for it.</p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW43" title="From a Desktop Browser to Safari on iOS"></a><h3 class="jump">From a Desktop Browser to Safari on iOS</h3><p>Safari on iOS provides a preeminent mobile web-viewing experience on iOS devices. People appreciate the crisp text and sharp images and the ability to adjust their view by rotating the device or pinching and tapping the screen.</p><p>Standards-based websites display well on iOS devices. In particular, websites that detect the device and do not use plug-ins look great on both iPhone and iPad with little, if any, modification.</p><p>In addition, the most successful websites typically:</p><ul class="ul"><li class="li"><p>Set the viewport appropriately for the device, if the page width needs to match the device width</p></li><li class="li"><p>Avoid CSS fixed positioning, so that content does not move offscreen when users zoom or pan the page</p></li><li class="li"><p>Enable a touch-based UI that does not rely on pointer-based interactions</p></li></ul><p>Sometimes, other modifications can be appropriate. For example, web apps always set the viewport width appropriately and often hide the UI of Safari on iOS. To learn more about how to make these modifications, see <span class="content_text"><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/UsingtheViewport/UsingtheViewport.html#//apple_ref/doc/uid/TP40006509" target="_self">“Configuring the Viewport”</a></span> and <span class="content_text"><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html#//apple_ref/doc/uid/TP40002051-CH3" target="_self">“Configuring Web Applications”</a></span> in <em><a href="https://web.archive.org/web/20130917/http://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051" target="_self">Safari Web Content Guide</a></em>.</p><p>Websites adapt the desktop web experience to Safari on iOS in other ways, too:</p><p><strong>Using custom CSS to provide adaptable UI.</strong> Different UI elements can be suitable for different environments. For example, the Apple website includes a page that displays movie trailers users can watch. When viewed in Safari on the desktop, users can click the numbers or the previous and next controls to see additional trailers:</p><figure class="figure"><img src="../Art/trailersdesktop.jpg" alt="image: ../Art/trailersdesktop.jpg" width="250" height="81"></figure><p>When viewed on iPhone, the next, previous, and number controls are replaced by prominent, easy-to-use buttons with symbols that echo the style of built-in controls (such as the detail disclosure indicator and the page indicator):</p><figure class="figure"><img src="../Art/trailerscontrol.jpg" alt="image: ../Art/trailerscontrol.jpg" width="311" height="74"></figure><p></p><p></p><p><strong>Accommodating the keyboard in Safari on iOS.</strong> When a keyboard and the form assistant are visible, Safari on iPhone displays your webpage in the area below the URL text field and above the keyboard and form assistant.</p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40006556-CH10-SW11" title="Note"></a><p><strong>Note:</strong>&nbsp;For the metrics on a high-resolution iPhone or iPod touch, double the values shown below.</p><p></p></aside></div><figure class="figure"><img src="../Art/keyboardmetrics.jpg" alt="image: ../Art/keyboardmetrics.jpg" width="509" height="482"></figure><p>When a keyboard and the form assistant are not displayed, there is an additional 216 pixels of vertical space available (in portrait orientation) for the display of your webpage. In landscape orientation, two of the values differ: The keyboard height is 162 pixels, and the form assistant height is 32 pixels.</p><p><strong>Accommodating the pop-up menu control in Safari on iOS.</strong> In Safari on the desktop, a pop-up menu that contains a large number of items displays as it does in an OS X app; that is, the menu opens to display all items, extending past the window boundaries, if necessary. In Safari on iOS, a pop-up menu is displayed using native elements, which provides a much better user experience. For example, on iPhone, the pop-up menu appears in a <strong>picker</strong>, a list of choices from which the user can pick, as shown below.</p><figure class="figure"><img src="../Art/popup_menu_iphone.png" alt="image: ../Art/popup_menu_iphone.png" width="320" height="460"></figure><p>On iPad, the pop-up menu displays in a popover, as shown below.</p><figure class="figure"><img src="../Art/popup_menu_ipad.jpg" alt="image: ../Art/popup_menu_ipad.jpg" width="333" height="668"></figure><p><strong>Using lists to display data in iPhone web apps.</strong> iOS users are accustomed to lists in native apps, so when they see lists in web apps, they’re more likely to think that the web content is an app. On iPhone, lists appear edge to edge or inside rounded rectangles. Each style is defined by its own metrics.</p><figure class="figure"><img src="../Art/list_metrics.jpg" class="wide-image" alt="image: ../Art/list_metrics.jpg" width="840" height="557"><img src="../Art/list_metrics.jpg" class="ipad-scaled-image" alt="image: ../Art/list_metrics.jpg" width="670" height="444"></figure></section></section><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW7" title="Transitioning Between iOS Devices"></a><h2 class="jump">Transitioning Between iOS Devices</h2><p>People appreciate having their apps run on all their iOS devices. As much as possible, ensure that each version of your app takes advantage of the characteristics of each device.</p><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW38" title="From Mail on iPhone to Mail on iPad"></a><h3 class="jump">From Mail on iPhone to Mail on iPad</h3><p>Mail is one of the premier built-in apps on iPhone. People appreciate the clear, streamlined way it organizes large amounts of information in a series of easy-to-use screens.</p><figure class="figure"><a name="//apple_ref/doc/uid/TP40006556-CH10-SW39"></a><img src="../Art/ds_mailscreens.png" class="wide-image" alt="image: ../Art/ds_mailscreens.png" width="874" height="386"><img src="../Art/ds_mailscreens.png" class="ipad-scaled-image" alt="image: ../Art/ds_mailscreens.png" width="670" height="295"></figure><p>Mail on iPad delivers the same core functionality. At the same time it provides more onscreen space for people’s messages, meaningful touches of realism, and powerful organizing and editing tools that are always accessible but not obtrusive. The visual stability of a single, uncluttered screen provides what users need in one place, with minimal context changes.</p><p>The differences between Mail on iPhone and Mail on iPad reflect the different user experiences of each device. </p><ul class="ul"><li class="li"><p>Mail on iPhone is designed to help mobile users handle their email while they’re standing in line or walking to a meeting. </p></li><li class="li"><p>Mail on iPad is efficient enough for people to use on the go, but its rich experience also encourages more in-depth use.</p></li></ul><p>Even though Mail on iPad tailors the user experience to the device, it does not alter the core functionality people are used to, or gratuitously change the location or effect of individual functions. iPhone Mail users easily recognize the toolbar items and mailbox structure in iPad Mail, and immediately know how to use them because they’re virtually identical.</p><p>To enhance the mobile email experience, Mail on iPad evolves the iPhone Mail UI in a number of important ways:</p><p><strong>Expanded support for device orientations.</strong> People can use Mail on iPad in any of the four orientations (landscape shown here). Although the landscape layout differs somewhat from the portrait layout, the focus remains on the content and functionality people care about.</p><figure class="figure"><a name="//apple_ref/doc/uid/TP40006556-CH10-SW40"></a><img src="../Art/land_mail_orientation.png" alt="image: ../Art/land_mail_orientation.png" width="614" height="449"></figure><p><strong>Increased focus on message content.</strong> Mail on iPad reserves most of the screen for the current message in all orientations (portrait shown in the following figure). This includes moving the toolbar to the top of the message view to increase the vertical space available for the message content. With the extra space, people can read longer messages with less scrolling. And when people want to view the message list in portrait, they can still see a large portion of the current message. </p><figure class="figure"><a name="//apple_ref/doc/uid/TP40006556-CH10-SW41"></a><img src="../Art/portrait_mail_orientation.png" alt="image: ../Art/portrait_mail_orientation.png" width="461" height="602"></figure><p><strong>A flatter hierarchy.</strong> Mail on iPad effectively flattens the Mail hierarchy (that is, account > mailbox > message list > message) by confining all levels above the message itself to a separate UI element. In landscape, these levels are persistently visible in the left pane of a split view; in portrait, users can view these levels by revealing an element that hovers over part of the main screen.</p><p><strong>Drastically reduced full-screen transitions.</strong> Because most of the hierarchy is available in a separate onscreen element, people can access most of what they need in a single screen. When people drill down through the hierarchy, it’s the account > mailbox > message list view that transitions, not the entire screen.</p><p><strong>Realistic messages.</strong> When people mark a message for deletion, it slides onto the message view like a physical sheet of paper. As they choose additional messages to delete, the messages form a realistic stack of papers, complete with slightly untidy edges.</p><figure class="figure"><a name="//apple_ref/doc/uid/TP40006556-CH10-SW42"></a><img src="../Art/realistic_stack.jpg" alt="image: ../Art/realistic_stack.jpg" width="614" height="449"></figure><p></p><p></p><p></p><p></p><p></p><p></p></section><section><a name="//apple_ref/doc/uid/TP40006556-CH10-SW8" title="Running on iPhone 5"></a><h3 class="jump">Running on iPhone 5</h3><p>You don’t have to redesign your app for it to look good on iPhone 5. Many apps look good simply by displaying more of their existing UI; others might need to stretch content or background regions. Only some apps—such as games or apps that display lots of custom artwork—are likely to need some additional work to look their best. </p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40006556-CH10-SW9" title="Note"></a><p><strong>Note:</strong>&nbsp;All apps that run on iPhone 5 must include a launch image of the correct size. To learn how to create launch images for iOS devices, see <span class="content_text"><a href="../IconsImages/IconsImages.html#//apple_ref/doc/uid/TP40006556-CH14-SW5">“Launch Images.”</a></span></p><p></p></aside></div><p>The iPhone 5 display is 176 pixels taller than the display of other iPhone and iPod touch devices. In portrait orientation, the extra height is about the same as the height of two additional rows in a standard table view. For example, Messages running on iPhone 5 (shown below on the right) displays a taller conversation area than does Messages running on iPhone 4S (shown below on the left).</p><figure class="figure"><img src="../Art/messages_portrait_both_2x.png" alt="image: ../Art/messages_portrait_both_2x.png" width="667" height="548"></figure><p>Of course, the additional 176 pixels in height translates into additional lateral space when the device is in landscape orientation. For example, in Messages on iPhone 5 (shown here below Messages on iPhone 4S), the UI stretches to fill the additional width.</p><figure class="figure"><img src="../Art/messages_landscape_both_2x.png" alt="image: ../Art/messages_landscape_both_2x.png" width="568" height="626"></figure><p>The Messages screens shown above illustrate a crucial point: The minor UI adjustments that were made to accommodate the iPhone 5 display do not change the app’s functionality in any way. The consistency of the user experience—which is evident in all of the apps described in this section—follows a key design principle of iPhone 5: The larger device display enables users to see more of the content they care about; it does <em>not</em> provide an opportunity to squeeze in more app functionality.</p><p>Because you won’t be changing the functionality of your app, there’s typically very little you have to do to make your app look great on iPhone 5. If you use Auto Layout to design your app’s UI, you might have even less work to do. The following guidelines can help you decide which UI changes are best suited to your app.</p><div class="notebox"><aside><a name="//apple_ref/doc/uid/TP40006556-CH10-SW10" title="Note"></a><p><strong>Note:</strong>&nbsp;New and updated apps must be optimized for iPhone 5. If an app is currently in the App Store and it hasn't been updated, it runs in a compatibility mode on iPhone 5. When an app runs in compatibility mode, iOS automatically centers the app’s UI by adding slim black bars above and below it.</p><p></p></aside></div><p><strong>Allow more content to be revealed automatically.</strong> If some of your UI is currently hidden below the bottom edge of the screen—requiring users to scroll—you don’t have to make any changes to allow the increased display height of iPhone 5 to reveal more of your UI. In Settings, for example, users see additional table rows on iPhone 5 (shown below, on the right) than they do on iPhone 4S (shown below, on the left).</p><figure class="figure"><img src="../Art/reveal_more_without_scrolling_2x.png" alt="image: ../Art/reveal_more_without_scrolling_2x.png" width="667" height="548"></figure><p><strong>Stretch content regions.</strong> If you display content in a view, consider vertically expanding the view to show some additional content or to insert more space within the view. For example, users have a  larger message body region in Mail on iPhone 5 (shown below, on the right) than they do in Mail on iPhone 4S (shown below, on the left).</p><figure class="figure"><img src="../Art/stretch_content_2x.png" alt="image: ../Art/stretch_content_2x.png" width="667" height="548"></figure><p><strong>Stretch background areas between content regions.</strong> You can make your layout look a bit more relaxed by expanding the vertical space between content views. For example, Game Center on iPhone 5 (shown below, on the right) shows more of the background between the main content regions than does Game Center on iPhone 4S (shown below, on the left).</p><figure class="figure"><img src="../Art/expand_background_2x.png" alt="image: ../Art/expand_background_2x.png" width="667" height="548"></figure><p><strong>If necessary, recenter dominant visual elements.</strong> After adjusting backgrounds or views to accommodate the additional space, you might want to make sure that principal elements of your UI are still centered appropriately. One way to do this is to first stretch a region near the top of the screen and then adjust the centering of the elements. For example, Compass on iPhone 5 (shown below, on the right) maintains the user’s focus on the compass and heading by keeping these elements centered on the extended background.</p><figure class="figure"><img src="../Art/recenter_element_2x.png" alt="image: ../Art/recenter_element_2x.png" width="667" height="548"></figure><p><strong>Expand custom artwork, but don’t put essential details in the new areas.</strong> If your app contains mostly custom UI—such as in a game—you should use the extra space to give users more artwork to enjoy. It’s not appropriate to put app-critical functionality or details in these additional areas, because not all users will see them. For example, users see more of the microphone stand in Voice Memos on iPhone 5 (shown below, on the right) than they do in Voice Memos on iPhone 4S (shown below, on the left).</p><figure class="figure"><img src="../Art/add_art_2x.png" alt="image: ../Art/add_art_2x.png" width="667" height="548"></figure><p><strong>In general, avoid increasing control sizes.</strong> If you use the minimum tappable size for controls in your app—that is, no smaller than 44 x 44 points—you should not need to adjust them for iPhone 5. However, you might choose to add a little more space between existing controls.</p><p><strong>Don’t use the extra space to display an additional bar or banner.</strong> People expect to see more content on iPhone 5. To avoid disappointing your users, resist the temptation to use the extra vertical space for a custom button bar or banner.</p></section></section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            <a class='nextLink' rel='next' href='../UEBestPractices/UEBestPractices.html'>Next</a><a class='previousLink' rel='prev' href='../AppDesign/AppDesign.html'>Previous</a>
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2013 Apple Inc. All Rights Reserved. &#40;Last updated: 2013-05-01&#041;</p></div></div>
+
+                <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> Copyright &#x00a9; 2013 Apple Inc. All Rights Reserved. <a href="http://www.apple.com/legal/internet-services/terms/site.html" target="_blank">Terms of Use</a>   |  <a href="http://www.apple.com/privacy/" target="_blank">Privacy Policy</a>  |  Updated: 2013-05-01</p></div></div>
+
+        <div id="pediaWindow">
+            <div id="pediaHeader"></div>
+            <div id="pediaBody"></div>
+        </div>
+    </article>
+
+    <div id="blackout">
+    <div id="preload"></div>
+</div>
+<div id="leave_feedback" class="button" role="button" tabindex="0">Provide Feedback</div>
+<div id="modal" aria-hidden="true">
+    <div id="closebox" tabindex="0" aria-label="Close feedback form" role="button"></div>
+    <div id="sending" class="hidden">
+        <h2 tabindex="0">Sending feedback&hellip;</h2>
+        <div id="sending_img"></div>
+    </div>
+    <div id="error" class="hidden">
+        <h2 tabindex="0">We&rsquo;re sorry, an error has occurred.</h2>
+        <p>Please try submitting your feedback later.</p>
+        <div id="error_icon"></div>
+    </div>
+    <div id="success" class="hidden">
+        <h2 tabindex="0">Thank you for providing feedback!</h2>
+        <p>Your input helps improve our developer documentation.</p>
+        <div id="thank_you_icon"></div>
+    </div>
+    
+    <form id="feedback" action="#" method="post">
+        <div class="left-leaf">
+            <h2 id="helpful_title" data-asterisk="a1" tabindex="0">How helpful is this document?</h2>     
+            <sup id="a1" class="asterisk" aria-hidden="true">*</sup>
+
+            <div id="star_group" role="radiogroup" aria-required="true">
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="1" /> 
+                    Very helpful
+                </label>
+                <label> 
+                    <input class="radio" type="radio" name="helped" value="2" /> 
+                    Somewhat helpful
+                </label>
+                <label>
+                    <input class="radio" type="radio" name="helped" value="3" /> 
+                    Not helpful
+                </label>
+            </div>
+        </div>
+        <div class="right-leaf">
+            <h2>How can we improve this document?</h2>
+            <div id="improve" class="checkboxes">
+                <label>
+                    <input type="checkbox" name="typo" /> 
+                    Fix typos or links
+                </label>
+                <label>
+                    <input type="checkbox" name="infoIncorrect" /> 
+                    Fix incorrect information
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_examples" /> 
+                    Add or update code samples
+                </label>
+                <label>
+                    <input type="checkbox" name="needs_art" /> 
+                    Add or update illustrations
+                </label>
+                <label>
+                    <input type="checkbox" name="missingInfo" /> 
+                    Add information about...
+                </label>
+            </div>
+        </div>
+
+        <textarea id="comment" name="problem" cols="70" rows="8" placeholder="Please tell us more about your experience with this document" data-asterisk="a2" required></textarea>
+        <sup id="a2" class="asterisk" aria-hidden="true">*</sup>
+
+        <input id="email" type="email" name="email" placeholder="Email (optional)" size="48">
+
+        <p class="fineprint">
+            <em aria-hidden="true"><span>*</span> Required information</em>
+        </p> 
+
+        <input id="submit" type="button" value="Send" />
+
+        <section id="legal">
+            <p>
+                To submit a product bug or enhancement request, please visit the 
+                <a href="https://developer.apple.com/bugreporter/" target="_blank">Bug Reporter</a> 
+                page.
+            </p>
+            <p>
+                Please read <a href="http://www.apple.com/legal/policies/ideas.html" target="_blank">Apple's Unsolicited Idea Submission Policy</a> 
+                before you send us your feedback.
+            </p> 
+        </section>
+    </form>
+</div>
+
+    
+    <script charset="utf-8" src="../Resources/826/JavaScript/lib/prototype.js"></script>
+    <script charset="utf-8" src="../book_data.js"></script>
+    <script src="../Resources/826/JavaScript/library.js"></script>
+    <script src="../Resources/826/JavaScript/feedback.js"></script>
+</body>
+<script type="text/javascript">
+if(typeof PageTracker !== 'undefined') {
+  if(window.addEventListener) {
+    window.addEventListener("load", function(){PageTracker.logPageLoad()},false);
+  } else if(window.attachEvent) {
+    window.attachEvent("onload",function(){PageTracker.logPageLoad()});
+  }
+}
+</script>
+</html>
